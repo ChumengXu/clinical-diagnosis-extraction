@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "clinical-diagnosis-extraction"
+version = "0.1.0"
+description = "Application to extract clinical diagnosis from text"
+authors = ["ChumengXu <chumengxucm@gmail.com>"]
+packages = [{include = "clinical_diagnosis_extraction"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.12"
+uvicorn = {extras = ["standard"], version = "^0.34.0"}
+pydantic = "^2.11.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
